@@ -247,7 +247,6 @@ window.CONTENT = {
     viewWorks: { en: "View works", tr: "Projeleri gör" },
     downloadCv: { en: "Download CV", tr: "CV indir" },
     comingSoon: { en: "Images coming soon", tr: "Görseller yakında" },
-    based: { en: "Based in Ankara · Working internationally", tr: "Ankara merkezli · Uluslararası çalışıyor" },
     close: { en: "Close", tr: "Kapat" },
   },
 };
