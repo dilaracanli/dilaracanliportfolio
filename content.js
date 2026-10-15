@@ -217,6 +217,17 @@ window.CONTENT = {
     },
   ],
 
+  // Ödüller & basın — link: haber/kaynak sayfası
+  awards: [
+    {
+      title: { en: "Honorable Mention — im2019 Interior Architecture Students Project Competition", tr: "Mansiyon — im2019 İçmimarlık Öğrencileri Proje Yarışması" },
+      org: { en: "TMMOB Chamber of Interior Architects · 1st Year Category", tr: "TMMOB İç Mimarlar Odası · 1. Sınıf Kategorisi" },
+      year: "2019",
+      source: "Arkitera",
+      link: "https://www.arkitera.com/haber/im2019-icmimarlik-ogrencileri-proje-yarismasi-sonuclari/",
+    },
+  ],
+
   skills: [
     { group: { en: "CAD & BIM", tr: "CAD & BIM" }, items: ["AutoCAD", "Revit", "ArchiCAD", "Rhino", "Grasshopper"] },
     { group: { en: "Visualization", tr: "Görselleştirme" }, items: ["3ds Max", "Corona Renderer", "D5 Render", "Enscape", "Lumion", "Twinmotion"] },
@@ -237,6 +248,8 @@ window.CONTENT = {
     aboutTitle: { en: "About", tr: "Hakkımda" },
     experienceTitle: { en: "Experience", tr: "Deneyim" },
     educationTitle: { en: "Education", tr: "Eğitim" },
+    awardsTitle: { en: "Awards & Press", tr: "Ödüller & Basın" },
+    readOn: { en: "Read on", tr: "Haberi oku:" },
     skillsTitle: { en: "Tools", tr: "Araçlar" },
     languagesTitle: { en: "Languages", tr: "Diller" },
     contactTitle: { en: "Let's work together", tr: "Birlikte çalışalım" },

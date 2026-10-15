@@ -85,6 +85,15 @@
         </li>`)
       .join("");
 
+    $("#awardsList").innerHTML = (C.awards || [])
+      .map((a) => `
+        <li class="reveal">
+          <div class="t__period">${esc(a.year)}</div>
+          <div class="t__role">${esc(t(a.title))}</div>
+          <div><div class="t__company">${esc(t(a.org))}</div>${a.link ? `<a class="t__note" href="${esc(a.link)}" target="_blank" rel="noopener">${esc(t(C.ui.readOn))} ${esc(a.source || "")} ↗</a>` : ""}</div>
+        </li>`)
+      .join("");
+
     // İletişim
     const mail = $("#mailLink");
     mail.href = `mailto:${C.email}`;
