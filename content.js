@@ -220,6 +220,13 @@ window.CONTENT = {
   // Ödüller & basın — link: haber/kaynak sayfası
   awards: [
     {
+      title: { en: "Exhibited — Basamaklar '24, 10th Architecture Students Project Exhibition", tr: "Sergilendi — Basamaklar '24, 10. Mimarlık Öğrencileri Proje Sergisi" },
+      org: { en: "Turkish Association of Freelance Architects (TSMD) · 3rd Year · Çankaya University", tr: "Türk Serbest Mimarlar Derneği (TSMD) · 3. Sınıf · Çankaya Üniversitesi" },
+      year: "2024",
+      source: "TSMD Basamaklar",
+      link: "https://www.tsmdbasamaklar.com/post/dilara-canl%C4%B1",
+    },
+    {
       title: { en: "Honorable Mention — im2019 Interior Architecture Students Project Competition", tr: "Mansiyon — im2019 İçmimarlık Öğrencileri Proje Yarışması" },
       org: { en: "TMMOB Chamber of Interior Architects · 1st Year Category", tr: "TMMOB İç Mimarlar Odası · 1. Sınıf Kategorisi" },
       year: "2019",
@@ -249,7 +256,7 @@ window.CONTENT = {
     experienceTitle: { en: "Experience", tr: "Deneyim" },
     educationTitle: { en: "Education", tr: "Eğitim" },
     awardsTitle: { en: "Awards & Press", tr: "Ödüller & Basın" },
-    readOn: { en: "Read on", tr: "Haberi oku:" },
+    readOn: { en: "View on", tr: "Kaynak:" },
     skillsTitle: { en: "Tools", tr: "Araçlar" },
     languagesTitle: { en: "Languages", tr: "Diller" },
     contactTitle: { en: "Let's work together", tr: "Birlikte çalışalım" },
