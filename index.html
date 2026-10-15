@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dilara Canlı — Interior Architect & Architect</title>
+  <meta name="description" content="Portfolio of Dilara Canlı — interior architect, architect and visual communication designer working between Türkiye, Italy, Spain and the Netherlands." />
+  <meta property="og:title" content="Dilara Canlı — Interior Architect & Architect" />
+  <meta property="og:description" content="Innovative, functional and user-centered spaces." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" aria-label="Home">D<span>C</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#works" data-i18n="ui.nav.works"></a>
+      <a href="#about" data-i18n="ui.nav.about"></a>
+      <a href="#experience" data-i18n="ui.nav.experience"></a>
+      <a href="#contact" data-i18n="ui.nav.contact"></a>
+    </nav>
+    <div class="nav__right">
+      <button class="lang" id="langToggle" aria-label="Change language"><span data-l="en">EN</span> / <span data-l="tr">TR</span></button>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <svg class="hero__grid" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M40 0H0V40" fill="none" stroke="currentColor" stroke-width=".5" />
+          </pattern>
+        </defs>
+        <rect width="800" height="800" fill="url(#g)" />
+        <g fill="none" stroke="currentColor" stroke-width="1.2" class="hero__plan">
+          <path d="M440 160h280v480H440z" />
+          <path d="M440 360h120v280" />
+          <path d="M560 160v120h160" />
+          <path d="M560 460h160" />
+          <path d="M600 360a40 40 0 0 1 40-40" />
+          <path d="M480 360a40 40 0 0 0-40 40" />
+        </g>
+      </svg>
+      <div class="hero__inner">
+        <p class="eyebrow" data-i18n="ui.based"></p>
+        <h1 class="hero__name"></h1>
+        <p class="hero__roles" id="heroRoles"></p>
+        <p class="hero__line" data-i18n="heroLine"></p>
+        <div class="hero__cta">
+          <a href="#works" class="btn btn--solid" data-i18n="ui.viewWorks"></a>
+          <a href="#" class="btn" id="cvBtn" data-i18n="ui.downloadCv" download></a>
+        </div>
+      </div>
+      <a href="#works" class="hero__scroll" aria-label="Scroll"><span></span></a>
+    </section>
+
+    <!-- WORKS -->
+    <section class="section" id="works">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <h2 data-i18n="ui.worksTitle"></h2>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div class="works" id="worksGrid"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--alt" id="about">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2 data-i18n="ui.aboutTitle"></h2>
+      </div>
+      <div class="about">
+        <div class="about__text" id="aboutText"></div>
+        <div class="stats" id="stats"></div>
+      </div>
+      <div class="about__cols">
+        <div>
+          <h3 class="sub" data-i18n="ui.skillsTitle"></h3>
+          <div id="skills"></div>
+        </div>
+        <div>
+          <h3 class="sub" data-i18n="ui.languagesTitle"></h3>
+          <div id="languages"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2 data-i18n="ui.experienceTitle"></h2>
+      </div>
+      <ol class="timeline" id="experienceList"></ol>
+
+      <div class="section__head section__head--sm">
+        <span class="section__num">04</span>
+        <h2 data-i18n="ui.educationTitle"></h2>
+      </div>
+      <ol class="edu" id="educationList"></ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h2 data-i18n="ui.contactTitle"></h2>
+      <p data-i18n="ui.contactText"></p>
+      <a class="contact__mail" id="mailLink"></a>
+      <div class="contact__links" id="socialLinks"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Dilara Canlı</span>
+    <a href="#top">↑</a>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <dialog class="modal" id="modal">
+    <button class="modal__close" id="modalClose" data-i18n-aria="ui.close">×</button>
+    <div class="modal__body" id="modalBody"></div>
+  </dialog>
+
+  <script src="content.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
