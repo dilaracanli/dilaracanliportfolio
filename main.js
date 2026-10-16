@@ -90,7 +90,7 @@
         <li class="reveal">
           <div class="t__period">${esc(a.year)}</div>
           <div class="t__role">${esc(t(a.title))}</div>
-          <div><div class="t__company">${esc(t(a.org))}</div>${a.link ? `<a class="t__note" href="${esc(a.link)}" target="_blank" rel="noopener">${esc(t(C.ui.readOn))} ${esc(a.source || "")} ↗</a>` : ""}</div>
+          <div><div class="t__company">${esc(t(a.org))}</div>${(a.sources || (a.link ? [{ name: a.source, link: a.link }] : [])).map((src) => `<a class="t__note" href="${esc(src.link)}" target="_blank" rel="noopener">${esc(t(C.ui.readOn))} ${esc(t(src.name) || "")} ↗</a>`).join("<br/>")}</div>
         </li>`)
       .join("");
 

@@ -217,7 +217,7 @@ window.CONTENT = {
     },
   ],
 
-  // Ödüller & basın — link: haber/kaynak sayfası
+  // Ödüller & basın — link: kaynak sayfası; birden çok kaynak için sources: [{ name, link }]
   awards: [
     {
       title: { en: "Exhibited — Basamaklar '24, 10th Architecture Students Project Exhibition", tr: "Sergilendi — Basamaklar '24, 10. Mimarlık Öğrencileri Proje Sergisi" },
@@ -228,10 +228,12 @@ window.CONTENT = {
     },
     {
       title: { en: "Honorable Mention — im2019 Interior Architecture Students Project Competition", tr: "Mansiyon — im2019 İçmimarlık Öğrencileri Proje Yarışması" },
-      org: { en: "TMMOB Chamber of Interior Architects · 1st Year Category", tr: "TMMOB İç Mimarlar Odası · 1. Sınıf Kategorisi" },
+      org: { en: "National competition · 482 students from 49 universities · 1st Year Category · TMMOB Chamber of Interior Architects", tr: "Ulusal yarışma · 49 üniversiteden 482 öğrenci · 1. Sınıf Kategorisi · TMMOB İç Mimarlar Odası" },
       year: "2019",
-      source: "Arkitera",
-      link: "https://www.arkitera.com/haber/im2019-icmimarlik-ogrencileri-proje-yarismasi-sonuclari/",
+      sources: [
+        { name: { en: "Çankaya University", tr: "Çankaya Üniversitesi" }, link: "https://inar.cankaya.edu.tr/news/im-2019-yarismasinda-1-lik-ve-mansiyon-odulleri/" },
+        { name: "Arkitera", link: "https://www.arkitera.com/haber/im2019-icmimarlik-ogrencileri-proje-yarismasi-sonuclari/" },
+      ],
     },
   ],
 
